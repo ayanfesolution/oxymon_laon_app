@@ -1,6 +1,8 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:oxymon_laon_app/utilities/constants.dart';
 import 'package:oxymon_laon_app/views/welcomepage.dart';
 
 class SplashScreenPage extends StatefulWidget {
@@ -25,16 +27,29 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
     return Scaffold(
       body: Column(
         children: [
-          Expanded(flex: 3,
+          Expanded(flex: 4,
               child: Center(
-            child: Container(
-                width: 250,
-                height: 250,
-                child: Image.asset('assets/images/logobig.jpeg')),
+                child: Container(
+                  width: 250,
+                  height: 300,
+                  child: Column(
+                    children: [
+                      Image.asset('assets/images/logobig.jpeg'),
+                      Text('Oxymon Loan', style: oBrandNameTextStyle,),
+                    ],
+                  )),
           )),
+
           Expanded(
-            flex: 1,
-              child: Text('Your sure partner at any time of need'))
+            flex: 2,
+              child: Column(
+                children: [
+                  Text('Your sure partner at any time of need!',
+                    style: oMainTextBigBoldTextStyle,),
+                  SizedBox(height: 75,),
+                  SpinKitChasingDots(color: AppColors.primaryColor)
+                ],
+              ))
         ],
       ),
     );
