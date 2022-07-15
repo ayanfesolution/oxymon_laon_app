@@ -19,8 +19,14 @@ const oMainTextBigBoldTextStyle = TextStyle(
   color: AppColors.mainTextColor
 );
 
-const oBrandNameTextStyle = TextStyle(
+const oMainTextLargeBoldTextStyle = TextStyle(
     fontWeight: FontWeight.w600,
+    fontSize: 30,
+    color: AppColors.mainTextColor
+);
+
+const oBrandNameTextStyle = TextStyle(
+    fontWeight: FontWeight.w800,
     fontSize: 30,
     color: AppColors.primaryColor
 );

@@ -29,13 +29,13 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
         children: [
           Expanded(flex: 4,
               child: Center(
-                child: Container(
+                child: SizedBox(
                   width: 250,
                   height: 300,
                   child: Column(
                     children: [
                       Image.asset('assets/images/logobig.jpeg'),
-                      Text('Oxymon Loan', style: oBrandNameTextStyle,),
+                      const Text('Oxymon Loan', style: oBrandNameTextStyle,),
                     ],
                   )),
           )),
@@ -43,7 +43,7 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
           Expanded(
             flex: 2,
               child: Column(
-                children: [
+                children: const [
                   Text('Your sure partner at any time of need!',
                     style: oMainTextBigBoldTextStyle,),
                   SizedBox(height: 75,),

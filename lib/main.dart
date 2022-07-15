@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         fontFamily: 'Roboto',
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
       ),
       home: const SplashScreenPage(),
     );
