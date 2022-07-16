@@ -4,6 +4,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:oxymon_laon_app/utilities/constants.dart';
 import 'package:oxymon_laon_app/utilities/reusablecustombuttons.dart';
 import 'package:oxymon_laon_app/views/dashboard.dart';
+import 'package:oxymon_laon_app/views/mainpagebottombar.dart';
 import 'package:oxymon_laon_app/views/register.dart';
 
 class SignInPage extends StatefulWidget {
@@ -99,7 +100,7 @@ class _SignInPageState extends State<SignInPage> {
                 title: 'Login',
                 onPressed: () {
                   Navigator.pushReplacement(context,
-                      MaterialPageRoute(builder: (context) => const DashboardPage()));
+                      MaterialPageRoute(builder: (context) => const MainPageBottomBar()));
                 },
                 size: const Size(double.maxFinite, 60)
             ),
@@ -111,7 +112,7 @@ class _SignInPageState extends State<SignInPage> {
               children: [
                 const Text('New User?'),
                 TextButton(onPressed: (){
-                  Navigator.push(
+                  Navigator.pushReplacement(
                       context, MaterialPageRoute(
                       builder: (context)=> const RegisterPage(),));
                 }, child: const Text('Sign Up'))
