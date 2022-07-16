@@ -8,7 +8,7 @@ import 'package:oxymon_laon_app/views/mainpagebottombar.dart';
 import 'package:oxymon_laon_app/views/register.dart';
 
 class SignInPage extends StatefulWidget {
-  const SignInPage({Key? key}) : super(key: key);
+  const SignInPage({Key key}) : super(key: key);
 
   @override
   State<SignInPage> createState() => _SignInPageState();

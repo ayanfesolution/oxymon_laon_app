@@ -7,10 +7,10 @@ class OCustomPassingButton extends StatelessWidget {
   GestureTapCallback onPressed;
   Size size;
   OCustomPassingButton({
-    Key? key,
-    required this.title,
-    required this.onPressed,
-    required this.size
+    Key key,
+     this.title,
+     this.onPressed,
+     this.size
   }) : super(key: key);
 
   @override

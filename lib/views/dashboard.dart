@@ -1,10 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:oxymon_laon_app/utilities/constants.dart';
+import 'package:oxymon_laon_app/views/loanpage.dart';
 import 'package:oxymon_laon_app/views/mainpagebottombar.dart';
 
 class DashboardPage extends StatefulWidget {
-  const DashboardPage({Key? key}) : super(key: key);
+  const DashboardPage({Key key}) : super(key: key);
 
   @override
   State<DashboardPage> createState() => _DashboardPageState();
@@ -103,8 +104,6 @@ class _DashboardPageState extends State<DashboardPage> {
 
           GestureDetector(
             onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => const MainPageBottomBar()));
             },
             child: Container(
               width: 175,

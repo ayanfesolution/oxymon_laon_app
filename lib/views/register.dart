@@ -5,7 +5,7 @@ import 'package:oxymon_laon_app/utilities/reusablecustombuttons.dart';
 import 'package:oxymon_laon_app/views/signin.dart';
 
 class RegisterPage extends StatefulWidget {
-  const RegisterPage({Key? key}) : super(key: key);
+  const RegisterPage({Key key}) : super(key: key);
 
   @override
   State<RegisterPage> createState() => _RegisterPageState();

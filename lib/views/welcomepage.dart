@@ -5,7 +5,7 @@ import 'package:oxymon_laon_app/views/register.dart';
 import 'package:oxymon_laon_app/views/signin.dart';
 
 class WelcomePage extends StatefulWidget {
-  const WelcomePage({Key? key}) : super(key: key);
+  const WelcomePage({Key key}) : super(key: key);
 
   @override
   State<WelcomePage> createState() => _WelcomePageState();

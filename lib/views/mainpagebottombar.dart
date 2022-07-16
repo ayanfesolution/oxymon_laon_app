@@ -4,7 +4,7 @@ import 'package:oxymon_laon_app/views/dashboard.dart';
 import 'package:oxymon_laon_app/views/loanpage.dart';
 
 class MainPageBottomBar extends StatefulWidget {
-  const MainPageBottomBar({Key? key}) : super(key: key);
+  const MainPageBottomBar({Key key}) : super(key: key);
 
   @override
   State<MainPageBottomBar> createState() => _MainPageBottomBarState();
@@ -40,7 +40,7 @@ class _MainPageBottomBarState extends State<MainPageBottomBar> {
             icon: Icon(Icons.money, color: _currentIndex == 1
                 ? AppColors.primaryColor
                 : AppColors.mainTextColor,),
-            label: 'Loan',
+            label: 'Get loan',
           ),
         ],
       ),

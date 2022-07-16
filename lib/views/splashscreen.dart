@@ -6,7 +6,7 @@ import 'package:oxymon_laon_app/utilities/constants.dart';
 import 'package:oxymon_laon_app/views/welcomepage.dart';
 
 class SplashScreenPage extends StatefulWidget {
-  const SplashScreenPage({Key? key}) : super(key: key);
+  const SplashScreenPage({Key key}) : super(key: key);
 
   @override
   State<SplashScreenPage> createState() => _SplashScreenPageState();
@@ -17,7 +17,7 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    Timer(const Duration(seconds: 5),
+    Timer(const Duration(seconds: 3),
             ()=> Navigator.pushReplacement(
             context, MaterialPageRoute(
           builder: (context) => const WelcomePage(),)) );
